@@ -16,7 +16,7 @@ class Ui_MainWindow2(object):
         self.titre.setStyleSheet("color: #96C0B3 ; font-size: 25px ; font-family : Inter;")
         self.titre.resize(200,100)
         self.titre.move(350,0)
-        self.titre1=QtWidgets.QPushButton("    TELECHARGER",MainWindow)
+        self.titre1=QtWidgets.QPushButton("TELECHARGER",MainWindow)
         self.titre2=QtWidgets.QLabel("les informations sont enregistrées",MainWindow)
         self.titre2.move(1000,30)
         self.titre2.hide()
