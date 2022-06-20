@@ -12,6 +12,8 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 
 
 class Ui_SecondWindow(object):
+  
+
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(511, 416)
@@ -28,7 +30,7 @@ class Ui_SecondWindow(object):
         
         self.calendarWidget = QtWidgets.QCalendarWidget(self.verticalLayoutWidget)
 
-        self.calendarWidget.selectionChanged.connect(self.calendar_date)
+        #self.calendarWidget.selectionChanged.connect(self.calendar_date)
         self.calendarWidget.setStyleSheet("  /*Tool button styles */\n"
 "QCalendarWidget QToolButton {\n"
 " \n"

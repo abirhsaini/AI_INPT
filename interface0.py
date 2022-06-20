@@ -10,19 +10,20 @@ MainWindow.setWindowIcon(QtGui.QIcon("PFA2.png"))
 
 class Ui_MainWindow(object):
     def opencal(self):
-        self.window=QtWidgets.QMainWindow()
         
-        self.ui.setupUi(self.window)
         self.window.show()
     
         
 
     def setupUi(self, MainWindow):
         self.ui = Ui_SecondWindow()
+        self.window=QtWidgets.QMainWindow()
+        self.ui.setupUi(self.window)
+        
         MainWindow.setWindowTitle("PFA")
         MainWindow.resize(1500,750)
         ##MainWindow.move(400,20)
-        self.titre=QtWidgets.QLabel("Abbulkassis \n DR-AI",MainWindow)
+        self.titre=QtWidgets.QLabel("ABULCASIS\n DR-AI",MainWindow)
         self.titre.setStyleSheet("color: #96C0B3 ; font-size: 25px ; font-family : Inter;")
         self.titre.resize(200,100)
         self.titre.move(690,35)

@@ -1,3 +1,9 @@
-chemins ou nous allons creer notre dolder de notre pacient:
+chemins ou nous allons creer notre folder de notre patientainsi que l'image de la detection:
 C:/Users/pc/Desktop/inpt/pfa/AI_INPT2/AI_INPT/runs/detect/
-chemins ou vous voulez:
+chemin du fichier de detect.py
+C:/Users/pc/Desktop/inpt/pfa/AI_INPT2/AI_INPT/detect.py
+chemin du best
+C:/Users/pc/Desktop/inpt/pfa/AI_INPT2/AI_INPT/best.pt
+chemins ou nous allons enregistrer nos resultat:
+C:/Users/pc/Desktop/inpt/pfa/AI_INPT2/AI_INPT/runs/
+veuillez ne pas sauter de ligne 
