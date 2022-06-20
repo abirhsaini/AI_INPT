@@ -4,6 +4,6 @@ chemin du fichier de detect.py
 C:/Users/pc/Desktop/inpt/pfa/AI_INPT2/AI_INPT/detect.py
 chemin du best
 C:/Users/pc/Desktop/inpt/pfa/AI_INPT2/AI_INPT/best.pt
-chemins ou nous allons enregistrer nos resultat:
+chemins ou nous allons enregistrer nos resultats:
 C:/Users/pc/Desktop/inpt/pfa/AI_INPT2/AI_INPT/runs/
 veuillez ne pas sauter de ligne 
