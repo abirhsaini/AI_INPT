@@ -2,6 +2,7 @@ from PyQt5 import QtWidgets, QtCore, QtGui , uic
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 import sys
+from calendrie import Ui_SecondWindow
 
 app = QtWidgets.QApplication(sys.argv)
 MainWindow = QtWidgets.QWidget()
@@ -9,6 +10,13 @@ MainWindow.setStyleSheet("background-color: #FFFFFF")
 MainWindow.setWindowIcon(QtGui.QIcon("PFA2.png"))
 
 class Ui_MainWindow2(object):
+    
+    def opencal(self):
+        self.window=QtWidgets.QMainWindow()
+        self.ui = Ui_SecondWindow()
+        self.ui.setupUi(self.window)
+        self.window.show()
+        
     def setupUi(self, MainWindow):
         MainWindow.setWindowTitle("PFA")
         MainWindow.resize(1500,750)
@@ -75,28 +83,38 @@ class Ui_MainWindow2(object):
 
 
 
-        self.label3=QtWidgets.QLabel("  Nom du patient:    jk   ",MainWindow)
+        self.label3=QtWidgets.QLabel("  Nom du patient:     jk   ",MainWindow)
         self.label3.setStyleSheet('background-color: #96C0B3; color: white ; font-size:12px ; border: 2px solid #96C0B3 ; border-radius:18px ; font family: Inter;')
-        self.label3.move(110,560)
-        self.label3.resize(140,40)
+        self.label3.move(95,540)
+        self.label3.resize(150,40)
 
         self.line=QtWidgets.QLineEdit(MainWindow)
-        self.line.move(215,560)
+        self.line.move(215,540)
         self.line.resize(420,40)
         self.line.setStyleSheet("background-color: white ; font-size: 12px ; color: black; border : 2px solid #96C0B3 ; border-radius:18px")
+        
+        self.label3=QtWidgets.QLabel(" Prènom du patient:   jk   ",MainWindow)
+        self.label3.setStyleSheet('background-color: #96C0B3; color: white ; font-size:12px ; border: 2px solid #96C0B3 ; border-radius:18px ; font family: Inter;')
+        self.label3.move(95,590)
+        self.label3.resize(150,40)
+
+        self.linep=QtWidgets.QLineEdit(MainWindow)
+        self.linep.move(215,590)
+        self.linep.resize(420,40)
+        self.linep.setStyleSheet("background-color: white ; font-size: 12px ; color: black; border : 2px solid #96C0B3 ; border-radius:18px")
         
 
         
         self.label4=QtWidgets.QLabel("      DATE:  ",MainWindow)
         self.label4.setStyleSheet('background-color: #96C0B3; color: white ; font-size:12px ; border: 2px solid #96C0B3 ; border-radius:18px ; font family: Inter;')
-        self.label4.move(110,610)
-        self.label4.resize(140,40)
+        self.label4.move(95,640)
+        self.label4.resize(150,40)
 
-        self.line1=QtWidgets.QDateEdit(MainWindow)
-        self.line1.move(215,610)
+        self.line1=QtWidgets.QLineEdit(MainWindow)
+        self.line1.move(215,640)
         self.line1.resize(420,40)
         self.line1.setStyleSheet("background-color: white ; font-size: 12px ; color: black; border : 2px solid #96C0B3 ; border-radius:18px")
-
+        self.line1.setText("16/06/2022")
         self.line4=QtWidgets.QLineEdit(MainWindow)
         self.line4.move(820,550)
         self.line4.resize(440,100)
@@ -109,6 +127,12 @@ class Ui_MainWindow2(object):
         self.btn5.setStyleSheet('background-color: #96C0B3; color: white ; font-size:12px ; border: 2px solid #96C0B3 ; border-radius:18px ; font family: Inter;')
         self.btn5.move(980, 625)
         self.btn5.resize(110, 40)
+
+        self.cal1=QtWidgets.QPushButton(MainWindow, clicked = lambda: self.opencal())
+        self.cal1.move(590,645)
+        self.cal1.resize(30,30)
+        self.cal1.setToolTip("Calendrier")
+        self.cal1.setIcon(QtGui.QIcon('cal.png'))
         
         self.photo7 = QtWidgets.QPushButton("Back", MainWindow)
         self.photo7.move(0, 10)

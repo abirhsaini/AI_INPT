@@ -1,0 +1,3 @@
+chemins ou nous allons creer notre dolder de notre pacient:
+C:/Users/pc/Desktop/inpt/pfa/AI_INPT2/AI_INPT/runs/detect/
+chemins ou vous voulez:
